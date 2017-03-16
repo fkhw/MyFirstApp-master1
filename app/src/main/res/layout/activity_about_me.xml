@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg8"
+    tools:context="comsci.alice.myfirstapp.AboutMe">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_margin"
+        android:text="@string/aboutMe"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvMyPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/my_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/fang" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:onClick="onClickBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="336dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/my_margin"
+        android:layout_marginRight="@dimen/my_margin"
+        android:layout_marginTop="@dimen/my_margin"
+        android:background="#c8ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvMyPic">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/my_name"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/my_workplace"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/my_email"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/my_facebook"
+                android:textSize="@dimen/h3" />
+
+            <TextView
+                android:id="@+id/txtTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/my_margin"
+                android:layout_marginLeft="@dimen/my_margin"
+                android:layout_marginTop="@dimen/my_margin"
+                android:text="@string/my_tel"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

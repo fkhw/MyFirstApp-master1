@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My FirstApp</string>
+
+    <string name="txtTitle">ป้ายจราจร</string>
+    <string name="moreInfo">More Info.</string>
+    <string name="aboutMe">About Me</string>
+
+    <string name="my_name"><b>ชื่อ </b>กาญจนาพร จันทร</string>
+    <string name="my_workplace"><b>หลักสูตร</b>วิทยาการคอมพิวเตอร์ มหาวิทยาลัยสวนดุสิต</string>
+    <string name="my_tel"><b>ติดต่อ : </b>061-978-6471</string>
+    <string name="my_email"><b>e-Mail : </b>fkhw.s@hotmail.com</string>
+    <string name="my_facebook"><b>Facebook : </b>Kanjanaporn Jantron</string>
+
+
+</resources>
